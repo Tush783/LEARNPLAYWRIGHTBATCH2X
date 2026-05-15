@@ -7,11 +7,13 @@ This repository contains JavaScript examples and Visual Studio Code shortcut doc
 - `chapter_01_Basics/` - Basic JavaScript and Playwright setup examples
 - `chapter_02_Javascript_Concepts/` - JavaScript concept examples, including identifiers, literals, and comments
 - `chapter_03_Identifier_Literals/` - Additional documentation files, including VS Code keyboard shortcut references
+- `chapter_04_Javascript_Concepts/` - Continued JavaScript concept examples covering `var`, `let`, `const`, functions, and variable scope
 
 ## What’s Included
 
 - JavaScript identifier rules and valid/invalid examples
 - Naming convention examples such as camelCase, snake_case, PascalCase, and UPPER_SNAKE_CASE
+- Examples covering `var`, `let`, `const`, functions, and block scope
 - VS Code keyboard shortcut documentation for Windows and macOS
 
 ## How to Use
