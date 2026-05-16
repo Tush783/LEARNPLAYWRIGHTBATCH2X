@@ -18,5 +18,5 @@ if(testStatus === "Pending")
     console.log("Inside if block : " + exectionTime); // Output: Inside if block : 1200
 }
 
-console.log("Outside if block : " + exectionTime); // This will cause an error, exectionTime is not defined outside the if block.
+//console.log("Outside if block : " + exectionTime); // This will cause an error, exectionTime is not defined outside the if block.
 //ReferenceError: exectionTime is not defined
