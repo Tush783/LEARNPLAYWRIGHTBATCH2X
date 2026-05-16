@@ -16,7 +16,7 @@ This repository is designed for beginners and intermediate learners who want to:
 - `chapter_01_Basics/` – JavaScript basics and Playwright setup examples
 - `chapter_02_Javascript_Concepts/` – Core JavaScript topics, including identifiers, literals, and comments
 - `chapter_03_Identifier_Literals/` – Reference documentation for VS Code shortcuts and identifier examples
-- `chapter_04_Javascript_Concepts/` – Advanced JavaScript behavior: `var`, `let`, `const`, functions, hoisting, and scope
+- `chapter_04_Javascript_Concepts/` – Advanced JavaScript behavior: `var`, `let`, `const`, functions, hoisting, block scope, and `let` hoisting
 
 ## What You Will Learn
 
