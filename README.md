@@ -18,6 +18,7 @@ This repository is designed for beginners and intermediate learners who want to:
 - `chapter_03_Identifier_Literals/` – Reference documentation for VS Code shortcuts and identifier examples
 - `chapter_04_Javascript_Concepts/` – Advanced JavaScript behavior: `var`, `let`, `const`, functions, hoisting, block scope, and `let` hoisting
 - `chapter_05_Literal/` – Literal types and examples: strings, numbers, booleans, null, undefined, template literals
+- `chapter_06_double_triple_equal.js/` – Equality and comparison operators, including loose vs strict checks and nullish comparisons
 
 ## What You Will Learn
 
