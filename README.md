@@ -46,3 +46,41 @@ This repository is designed for beginners and intermediate learners who want to:
 - This repository is intended for learning and experimentation.
 - Examples are written to illustrate behavior clearly rather than as production code.
 - Use the files as a study guide, then modify and extend them to deepen understanding.
+
+## Requirements
+
+- Node.js 16+ (or current LTS)
+- npm or yarn
+- (Optional) Playwright for browser automation examples: `npm i -D playwright`
+
+## Quick Start
+
+1. Clone the repository and open it in VS Code.
+
+2. Install dependencies (if using Playwright examples):
+
+```
+npm install
+npm i -D playwright
+```
+
+3. Run an example script with Node.js (example):
+
+```
+node chapter_01_Basics/01_Basics.js
+```
+
+4. To run Playwright tests (if you add tests):
+
+```
+npx playwright test
+```
+
+## Contributing
+
+- Feel free to open issues or PRs with improvements or additional examples.
+- The examples are organized by chapter for progressive learning.
+
+---
+
+_Last updated: May 20, 2026_
