@@ -19,6 +19,7 @@ This repository is designed for beginners and intermediate learners who want to:
 - `chapter_04_Javascript_Concepts/` – Advanced JavaScript behavior: `var`, `let`, `const`, functions, hoisting, block scope, and `let` hoisting
 - `chapter_05_Literal/` – Literal types and examples: strings, numbers, booleans, null, undefined, template literals
 - `chapter_06_double_triple_equal.js/` – Equality and comparison operators, including loose vs strict checks and nullish comparisons
+- `chapter_07_If_else/` – Conditional statements with if, else if, and else logic, including real-world examples and leap year calculations
 
 ## What You Will Learn
 
@@ -40,6 +41,7 @@ This repository is designed for beginners and intermediate learners who want to:
 - Move to `chapter_02_Javascript_Concepts` for foundational language behavior.
 - Use `chapter_04_Javascript_Concepts` to study advanced topics like hoisting and scope.
 - Reference the VS Code shortcut files in `chapter_03_Identifier_Literals` while coding.
+- Practice conditional logic with real-world examples in `chapter_07_If_else`.
 
 ## Notes
 
@@ -83,4 +85,4 @@ npx playwright test
 
 ---
 
-_Last updated: May 20, 2026_
+_Last updated: May 22, 2026_
