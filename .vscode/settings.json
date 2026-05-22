@@ -4,5 +4,19 @@
     "editor.inlineSuggest.edits.allowCodeShifting": "never",
     "editor.inlineSuggest.edits.renderSideBySide": "never",
     "editor.inlineSuggest.showToolbar": "never",
-    "editor.screenReaderAnnounceInlineSuggestion": false
+    "editor.screenReaderAnnounceInlineSuggestion": false,
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "editor.inlineSuggest.enabled": false,
+    "editor.inlineSuggest.suppressInSnippetMode": false,
+    "editor.inlineSuggest.syntaxHighlightingEnabled": false,
+    "editor.suggest.filterGraceful": false,
+    "editor.suggest.matchOnWordStartOnly": false,
+    "editor.suggest.showClasses": true,
+    "editor.suggest.showColors": true,
+    "editor.suggest.showConstants": true,
+    "editor.suggest.showConstructors": false,
+    "editor.suggest.showCustomcolors": false,
+    "editor.suggest.showDeprecated": true,
+    "editor.suggest.showEnumMembers": true,
+    "editor.suggest.shareSuggestSelections": true
 }
