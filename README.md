@@ -20,6 +20,8 @@ This repository is designed for beginners and intermediate learners who want to:
 - `chapter_05_Literal/` – Literal types and examples: strings, numbers, booleans, null, undefined, template literals
 - `chapter_06_double_triple_equal.js/` – Equality and comparison operators, including loose vs strict checks and nullish comparisons
 - `chapter_07_If_else/` – Conditional statements with if, else if, and else logic, including real-world examples and leap year calculations
+- `chapter_08_Switch_Statement/` – Switch statements for multi-way branching, with real-world examples like month names and days in month
+- `chapter_09_User_Input/` – Handling user input via `readline` module, with examples on prompts and basic input validation
 
 ## What You Will Learn
 
@@ -42,6 +44,8 @@ This repository is designed for beginners and intermediate learners who want to:
 - Use `chapter_04_Javascript_Concepts` to study advanced topics like hoisting and scope.
 - Reference the VS Code shortcut files in `chapter_03_Identifier_Literals` while coding.
 - Practice conditional logic with real-world examples in `chapter_07_If_else`.
+- Learn multi-way branching with `chapter_08_Switch_Statement` for cleaner conditional code.
+- Explore interactive programs in `chapter_09_User_Input` for handling user input.
 
 ## Notes
 
