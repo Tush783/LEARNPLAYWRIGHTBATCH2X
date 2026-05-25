@@ -89,4 +89,4 @@ npx playwright test
 
 ---
 
-_Last updated: May 22, 2026_
+_Last updated: May 25, 2026_
