@@ -7,7 +7,7 @@ A hands-on repository for learning JavaScript fundamentals with organized exampl
 This repository is designed for beginners and intermediate learners who want to:
 
 - explore JavaScript language behavior through practical examples
-- understand modern variable scope, functions, and control flow
+- understand modern variable scope, functions, arrays, and control flow
 - learn how VS Code shortcuts can speed up development
 - review interactive and reusable JavaScript examples
 
@@ -23,6 +23,7 @@ This repository is designed for beginners and intermediate learners who want to:
 - `chapter_08_Switch_Statement/` – Switch statements for multi-way branching, with month/day and multi-case examples
 - `chapter_09_User_Input/` – Handling user input with the Node.js `readline` module and prompt examples
 - `chapter_10_Loops/` – Looping constructs like `for`, `for...of`, `for...in`, `while`, and `do...while`
+- `chapter_11_Arrays/` – Array creation, iteration, transformation, and common array methods
 
 ## What You Will Learn
 
@@ -30,6 +31,7 @@ This repository is designed for beginners and intermediate learners who want to:
 - Differences between `var`, `let`, and `const`
 - Function behavior, hoisting, and scope visibility
 - Control flow with conditional statements and loop constructs
+- Working with arrays and common array operations
 - Practical examples of JavaScript execution order and engine behavior
 - Useful VS Code keyboard shortcuts for Windows and macOS
 
@@ -47,7 +49,7 @@ This repository is designed for beginners and intermediate learners who want to:
 - Use `chapter_04_Javascript_Concepts` to study advanced topics like hoisting and scope.
 - Practice literal types in `chapter_05_Literal` and comparison rules in `chapter_06_double_triple_equal.js`.
 - Study conditional logic in `chapter_07_If_else` and `chapter_08_Switch_Statement`.
-- Learn loops in `chapter_10_Loops` and handle interactive input in `chapter_09_User_Input`.
+- Learn loops in `chapter_10_Loops`, explore arrays in `chapter_11_Arrays`, and handle interactive input in `chapter_09_User_Input`.
 
 ## Notes
 
