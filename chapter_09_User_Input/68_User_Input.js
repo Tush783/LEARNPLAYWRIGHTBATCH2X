@@ -5,4 +5,4 @@ if (num % 2 === 0) {
     console.log(num + " is Even");
 } else {
     console.log(num + " is Odd");
-} // can be done in browser/console/INSPECT AND RUN IN COSOLE
+} // can be done in browser/console/Inpect and run in Console

@@ -2,16 +2,16 @@ let testScore = 85;
 
 switch(true){
     case (testScore >=95):
-        console.log("Outstanding - Top Performer");
+        console.log("Outstanding - Top Performer1");
         break;
     case (testScore >=85):
-        console.log("Outstanding - Top Performer");
+        console.log("Outstanding - Top Performer2");
         break;      
     case (testScore >=70):
-        console.log("Outstanding - Top Performer");
+        console.log("Outstanding - Top Performer3");
         break;
     case (testScore >=50):
-        console.log("Outstanding - Top Performer");
+        console.log("Outstanding - Top Performer4");
         break;    
     default:
         console.log("Unsatisfactory - Requires Training");
