@@ -247,7 +247,7 @@ Complete array coverage: creation, access, mutation, transformation, searching, 
 ### Chapter 12 — Functions
 > `chapter_12_Functions/`
 
-All four function types in JavaScript, plus template literals inside functions, function expressions, and arrow functions.
+Complete functions coverage: all four types, arrow functions, IIFE, default/rest/spread params, scope, closures, higher-order functions, and pure functions.
 
 | File | Topic |
 |------|-------|
@@ -259,6 +259,20 @@ All four function types in JavaScript, plus template literals inside functions, 
 | `101_Template_Literal.js` | Template literals inside functions |
 | `102_Fn_Expression.js` | Function expressions |
 | `103_Arrow_Fn.js` | Arrow function syntax and behavior |
+| `104_Arrow_Fn_Real.js` | Real-world arrow function — HTTP status code validator |
+| `105_IIFE.js` | IIFE (Immediately Invoked Function Expression) |
+| `106_Default_Param_Fn.js` | Default parameter values |
+| `107_IQ.js` | Interview question |
+| `108_Rest_Param_Fn.js` | Rest parameters (`...args`) |
+| `109_IQ_.js` | Interview question |
+| `110_Spread_IQ.js` | Spread operator IQ |
+| `111_Scope_Fn.js` | Function scope and variable visibility |
+| `112_IQ.js` | Interview question |
+| `113_Closure.js` | Closures — introduction |
+| `114_Closure.js` | Closures — advanced examples |
+| `115_API_REAL_Closure.js` | Real-world closure with API simulation |
+| `116_Higher_Order_Fn.js` | Higher-order functions (`map`, `filter`, callbacks) |
+| `117_Pure_Functions.js` | Pure vs impure functions with examples |
 
 ---
 
@@ -333,4 +347,4 @@ Each chapter builds on the previous one. The `IQ` (Interview Question) files ins
 
 ---
 
-_Last updated: June 12, 2026_
+_Last updated: June 13, 2026_

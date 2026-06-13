@@ -20,3 +20,28 @@ console.log(doubleIt(10));
 
 const printIt = name => console.log(name);
 printIt("Dutta")
+
+//function with no argument
+function say() {
+    console.log("Hio");
+}
+
+say();
+
+//Arrow funtion with no argument
+const say1 = () => console.log('Hi');
+say1();
+
+//Example 2
+const say2 = () => 'Hi';
+let r3 = say2();
+console.log(r3);
+
+//Multiple lines Arrow Function
+const greet3 = (name) => {
+    const message = "Hi" + name;
+    return message; //when multiple lines returnis needed
+}
+
+let q = greet3("Tushar");
+console.log(q);
