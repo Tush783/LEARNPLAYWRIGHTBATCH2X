@@ -53,6 +53,7 @@ The goal is not just to memorize syntax, but to genuinely understand *how* JavaS
 | 11 | Arrays | Creation, access, mutation, transformation, searching, sorting, slicing |
 | 12 | Functions | All 4 types, arrow functions, IIFE, closures, higher-order functions, pure functions |
 | 13 | Strings | String methods, searching, transformation, type conversion, cheat sheet |
+| 14 | Objects | Object literals, dot/bracket notation, reference vs primitive, destructuring, methods, `this` |
 
 ---
 
@@ -73,8 +74,9 @@ LEARNPLAYWRIGHTBATCH2X/
 ├── chapter_10_Loops/
 ├── chapter_11_Arrays/
 ├── chapter_12_Functions/
-└── chapter_13_Strings.js/
-    └── javascript_Stringcheatsheet.md   ← String methods quick reference
+├── chapter_13_Strings.js/
+│   └── javascript_Stringcheatsheet.md   ← String methods quick reference
+└── chapter_14_Objects/
 ```
 
 ---
@@ -330,6 +332,28 @@ Comprehensive string method coverage with real-world examples, type conversion, 
 | `123.SC.js` | String conversion — `toString`, `Number`, `parseInt`, `parseFloat` |
 | `javascript_Stringcheatsheet.md` | Complete string methods quick-reference cheat sheet |
 
+### Chapter 14 — Objects
+> `chapter_14_Objects/`
+
+Deep coverage of JavaScript objects — from creation and mutation through reference semantics, methods, destructuring, and the full Object API.
+
+| File | Topic |
+| :--- | :---- |
+| `124_Objects.js` | Complete object reference — literal syntax, dot/bracket notation, add/update/delete, methods, `this`, constructor functions, `Object.keys/values/entries`, spread, destructuring, shorthand, computed keys, `in` / `hasOwnProperty` |
+| `125_Objects2.js` | Key-value pairs, JSON vs JS object syntax, dot vs bracket notation, reference behavior |
+| `126_Objects_Creation.js` | Object creation and reference equality — `===` compares references, not values |
+| `127_Objects_Real.js` | Dynamic property addition, `delete` keyword, real-world config object |
+| `128_Primitive_Ref.js` | Primitive vs reference types — copy by value vs copy by reference |
+| `129_ObExamples.js` | JSON vs JS object syntax comparison |
+| `130_IQ.js` | Interview question — dynamic property access, adding and modifying properties |
+| `131_Object_Fn.js` | Functions (methods) inside objects |
+| `132_Obj_Decon.js` | Object destructuring — basic extraction, renaming variables, default values, nested destructuring |
+| `133_Spread,js` | Spread operator `...` — shallow copying objects into a new independent object |
+| `134_Objects_GET_SET_Methods.js` | `get` and `set` — computed properties that read and write like regular values |
+| `135_IQ.js` | Interview question — `Object.keys`, `Object.values`, `Object.entries`, `for...in` loop |
+| `136_Obj_Real.js` | Real-world objects — test environment config, expected API response, project config with `process.env` |
+| `137_let_const_odj.js` | `let` vs `const` with objects — when each is appropriate and the golden rule |
+
 ---
 
 ## Getting Started
@@ -393,6 +417,9 @@ Phase 3 — Data & Iteration
 Phase 4 — Functions & Strings
   Chapter 12  →  Functions — all types, closures, HOF, pure functions
   Chapter 13  →  Strings — methods, transformation, conversion
+
+Phase 5 — Objects
+  Chapter 14  →  Objects — literals, reference semantics, destructuring, methods
 ```
 
 > Each chapter's `IQ` files simulate real technical interview questions for QA / SDET roles. Review them after completing each chapter.
@@ -419,4 +446,4 @@ Phase 4 — Functions & Strings
 
 ---
 
-_Last updated: June 14, 2026_
+_Last updated: June 20, 2026 — Chapter 14 complete_

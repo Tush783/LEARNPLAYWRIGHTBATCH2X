@@ -1,0 +1,9 @@
+// Think of ... (spread) like emptying a box and putting everything inside into a new box
+
+const obj1 = {a:1, b:2};
+const obj2 = {a:3, b:4};
+
+// {...obj1} opens obj1 and copies all its contents into a brand new object
+// "copy" is now a separate box — changing copy will NOT affect obj1
+const copy = {...obj1};
+console.log(copy)  // { a: 1, b: 2 }
