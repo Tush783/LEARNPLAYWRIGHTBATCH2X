@@ -54,6 +54,7 @@ The goal is not just to memorize syntax, but to genuinely understand *how* JavaS
 | 12 | Functions | All 4 types, arrow functions, IIFE, closures, higher-order functions, pure functions |
 | 13 | Strings | String methods, searching, transformation, type conversion, cheat sheet |
 | 14 | Objects | Object literals, dot/bracket notation, reference vs primitive, destructuring, methods, `this` |
+| 15 | 2D Arrays | Grid structure, nested loops, `map`/`reduce` on rows, pattern printing, real-world test matrix |
 
 ---
 
@@ -76,7 +77,8 @@ LEARNPLAYWRIGHTBATCH2X/
 ├── chapter_12_Functions/
 ├── chapter_13_Strings.js/
 │   └── javascript_Stringcheatsheet.md   ← String methods quick reference
-└── chapter_14_Objects/
+├── chapter_14_Objects/
+└── chapter_15_2D_Array/
 ```
 
 ---
@@ -354,6 +356,19 @@ Deep coverage of JavaScript objects — from creation and mutation through refer
 | `136_Obj_Real.js` | Real-world objects — test environment config, expected API response, project config with `process.env` |
 | `137_let_const_odj.js` | `let` vs `const` with objects — when each is appropriate and the golden rule |
 
+### Chapter 15 — 2D Arrays
+> `chapter_15_2D_Array/`
+
+Arrays of arrays — understanding grid structure, nested loops, functional operations on rows, and real-world test matrix use cases.
+
+| File | Topic |
+| :--- | :---- |
+| `138_2D_Array.js` | 2D array basics — grid structure, `grid[row][col]` access, nested `for` loops |
+| `139_2d.js` | Matrix vs grid — size notation, `grid.length` for rows, `grid[0].length` for columns |
+| `140_Real.js` | Real-world test matrix — nested loops, `for...of`, `forEach` to find failed test cases |
+| `141_2d_Array_Functions.js` | `map` + `reduce` to sum each row, filtering failed tests with `.includes()` |
+| `142_IQ_Right_Pyramid_Pattern.js` | Interview question — right pyramid star pattern using nested loops |
+
 ---
 
 ## Getting Started
@@ -418,8 +433,9 @@ Phase 4 — Functions & Strings
   Chapter 12  →  Functions — all types, closures, HOF, pure functions
   Chapter 13  →  Strings — methods, transformation, conversion
 
-Phase 5 — Objects
+Phase 5 — Objects & 2D Arrays
   Chapter 14  →  Objects — literals, reference semantics, destructuring, methods
+  Chapter 15  →  2D Arrays — grids, nested loops, map/reduce, test matrices
 ```
 
 > Each chapter's `IQ` files simulate real technical interview questions for QA / SDET roles. Review them after completing each chapter.
@@ -446,4 +462,4 @@ Phase 5 — Objects
 
 ---
 
-_Last updated: June 20, 2026 — Chapter 14 complete_
+_Last updated: June 23, 2026 — Chapter 15 complete_
