@@ -368,6 +368,8 @@ Arrays of arrays — understanding grid structure, nested loops, functional oper
 | `140_Real.js` | Real-world test matrix — nested loops, `for...of`, `forEach` to find failed test cases |
 | `141_2d_Array_Functions.js` | `map` + `reduce` to sum each row, filtering failed tests with `.includes()` |
 | `142_IQ_Right_Pyramid_Pattern.js` | Interview question — right pyramid star pattern using nested loops |
+| `143_IQ_Reverse_Right_Pyramid_Pattern.js` | Interview question — reverse right pyramid (starts wide, shrinks down) |
+| `144_IQ_Proper_Pyramid.js` | Interview question — centered proper pyramid using spaces and odd-star formula `2i-1` |
 
 ---
 
@@ -462,4 +464,4 @@ Phase 5 — Objects & 2D Arrays
 
 ---
 
-_Last updated: June 23, 2026 — Chapter 15 complete_
+_Last updated: June 23, 2026_
