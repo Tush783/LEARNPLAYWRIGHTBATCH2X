@@ -25,7 +25,7 @@ for(let row of testMatrix) {
     console.log();  // move to the next line after each row is printed
 }
 
-/* forEach */
+/* forEach - NOT USED */
 testMatrix.forEach(row => {
   row.forEach(cell => process.stdout.write(cell + "."));
   console.log();
