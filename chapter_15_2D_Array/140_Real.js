@@ -26,6 +26,11 @@ for(let row of testMatrix) {
 }
 
 /* forEach - NOT USED */
+// ME HAVE BIG LIST OF LISTS (testMatrix).
+// ME GO THROUGH EACH SMALL LIST (row = one test case).
+//   INSIDE SMALL LIST, ME GO THROUGH EACH THING (cell = name, result, code).
+//   ME PRINT THING. ME ADD DOT. ME NO GO NEW LINE YET.
+// WHEN SMALL LIST DONE, ME BANG DRUM (console.log). NEW LINE. ME DO NEXT SMALL LIST.
 testMatrix.forEach(row => {
   row.forEach(cell => process.stdout.write(cell + "."));
   console.log();

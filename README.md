@@ -55,6 +55,7 @@ The goal is not just to memorize syntax, but to genuinely understand *how* JavaS
 | 13 | Strings | String methods, searching, transformation, type conversion, cheat sheet |
 | 14 | Objects | Object literals, dot/bracket notation, reference vs primitive, destructuring, methods, `this` |
 | 15 | 2D Arrays | Grid structure, nested loops, `map`/`reduce` on rows, pattern printing, real-world test matrix |
+| 16 | Callbacks | What callbacks are, 3 ways to pass them, sync vs async, callback hell, parameters & return values |
 
 ---
 
@@ -78,7 +79,8 @@ LEARNPLAYWRIGHTBATCH2X/
 ├── chapter_13_Strings.js/
 │   └── javascript_Stringcheatsheet.md   ← String methods quick reference
 ├── chapter_14_Objects/
-└── chapter_15_2D_Array/
+├── chapter_15_2D_Array/
+└── chapter_16_Callback.js/
 ```
 
 ---
@@ -369,6 +371,25 @@ Arrays of arrays — understanding grid structure, nested loops, functional oper
 | `141_2d_Array_Functions.js` | `map` + `reduce` to sum each row, filtering failed tests with `.includes()` |
 | `142_IQ_Right_Pyramid_Pattern.js` | Interview question — right pyramid star pattern using nested loops |
 
+### Chapter 16 — Callbacks
+> `chapter_16_Callback.js/`
+
+The foundation of asynchronous JavaScript — understanding what a callback is, how to pass one, when JavaScript uses them, and how they connect directly to the way Playwright test functions work.
+
+| File | Topic |
+| :--- | :---- |
+| `143_Callback.js` | Introduction to callbacks — what they are and two ways to pass them (named vs anonymous) |
+| `145_Callback.js` | Three ways to pass a callback — named function, anonymous function, arrow function |
+| `146_CB.js` | Playwright-style `test()` call — a callback in the exact shape Playwright expects |
+| `147_CB_Fn.js` | Real-world analogy — cafe reservation scenario showing callback timing |
+| `148_PW_CB.js` | How Playwright's `test()` works under the hood — a hand-built version to show the pattern |
+| `149_JS_cB.js` | Synchronous vs asynchronous — `setTimeout` demo showing JS does not wait |
+| `150_Synch_CB.js` | Synchronous callback with `forEach` iterating a test results array |
+| `151_Asynch.js` | Asynchronous callback with `setTimeout` simulating a delayed API response |
+| `152_callback_hell.js` | Callback hell / Pyramid of Doom — 5-step nested example showing why this pattern breaks |
+| `153_CB_Parameter.js` | Callbacks without parameters vs callbacks that receive data from the caller |
+| `153_CB_Return.js` | Callbacks that return values — `calculate` function delegating math to a named or anonymous callback |
+
 ---
 
 ## Getting Started
@@ -436,6 +457,9 @@ Phase 4 — Functions & Strings
 Phase 5 — Objects & 2D Arrays
   Chapter 14  →  Objects — literals, reference semantics, destructuring, methods
   Chapter 15  →  2D Arrays — grids, nested loops, map/reduce, test matrices
+
+Phase 6 — Asynchronous JavaScript
+  Chapter 16  →  Callbacks — sync vs async, 3 ways to pass, callback hell, parameters & return values
 ```
 
 > Each chapter's `IQ` files simulate real technical interview questions for QA / SDET roles. Review them after completing each chapter.
@@ -462,4 +486,4 @@ Phase 5 — Objects & 2D Arrays
 
 ---
 
-_Last updated: June 23, 2026 — Chapter 15 complete_
+_Last updated: July 1, 2026 — Chapter 16 complete_
