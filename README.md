@@ -5,7 +5,7 @@
 <p align="left">
   <img alt="Node.js" src="https://img.shields.io/badge/Node.js-16%2B-339933?logo=node.js&logoColor=white">
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-ES2020%2B-F7DF1E?logo=javascript&logoColor=black">
-  <img alt="Chapters" src="https://img.shields.io/badge/Chapters-17-blue">
+  <img alt="Chapters" src="https://img.shields.io/badge/Chapters-19-blue">
   <img alt="Status" src="https://img.shields.io/badge/Status-In%20Progress-brightgreen">
   <img alt="Focus" src="https://img.shields.io/badge/Focus-Playwright%20Automation-45ba4b?logo=playwright&logoColor=white">
 </p>
@@ -65,15 +65,20 @@ flowchart LR
 
     subgraph P6["Phase 6 · Async JS"]
         direction TB
-        C16["16 Callbacks"] --> C17["17 Promises"]
+        C16["16 Callbacks"] --> C17["17 Promises"] --> C18["18 Async / Await"]
     end
 
-    P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> PW(["Playwright\nAutomation"])
+    subgraph P7["Phase 7 · Real Automation"]
+        direction TB
+        C19["19 Playwright Basics"]
+    end
+
+    P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7 --> PW(["Playwright\nAutomation"])
 
     style PW fill:#45ba4b,stroke:#2e7d32,color:#fff
 ```
 
-> Each phase builds directly on the one before it. By the end of Phase 6 you have every language building block needed to read, write, and debug Playwright's async, promise-based API.
+> Each phase builds directly on the one before it. By the end of Phase 6 you have every language building block needed to read, write, and debug Playwright's async, promise-based API — Phase 7 is where that knowledge gets applied to a real Playwright project.
 
 ---
 
@@ -86,6 +91,8 @@ flowchart LR
 | **QA / SDET** | Use `IQ` files throughout each chapter to prepare for technical interviews |
 | **Playwright learner** | Complete all chapters before moving into Playwright — this is your prerequisite |
 | **Async / Promises learner** | Jump to chapter 17 for `Promise`, `.then` / `.catch` / `.finally`, `Promise.all` / `allSettled` |
+| **Async / Await learner** | Jump to chapter 18 for `async` / `await`, sequential vs parallel execution, `try/catch/finally` |
+| **Ready for real Playwright** | Chapter 19 sets up an actual Playwright project — `npm install`, `npx playwright test` |
 
 ---
 
@@ -110,6 +117,8 @@ flowchart LR
 | 15 | 2D Arrays | Grid structure, nested loops, `map`/`reduce` on rows, pattern printing, real-world test matrix |
 | 16 | Callbacks | What callbacks are, 3 ways to pass them, sync vs async, callback hell, parameters & return values |
 | 17 | Promises | `Promise` states, `resolve` / `reject`, `.then` / `.catch` / `.finally`, chaining, `Promise.all` / `allSettled` |
+| 18 | Async / Await | `async` functions, `await`, `try` / `catch` / `finally`, sequential vs parallel execution with `Promise.all` |
+| 19 | Playwright Basics | Real Playwright project setup — `package.json`, installing the `playwright` package, running tests with `npx` |
 
 ---
 
@@ -135,7 +144,11 @@ LEARNPLAYWRIGHTBATCH2X/
 ├── chapter_14_Objects/
 ├── chapter_15_2D_Array/
 ├── chapter_16_Callback.js/
-└── chapter_17_Promise/
+├── chapter_17_Promise/
+├── chapter_18_Async.js/
+└── chapter_19_Playwright_Basics/
+    ├── package.json
+    └── package-lock.json
 ```
 
 ---
@@ -464,6 +477,37 @@ The modern alternative to callbacks — creating promises, resolving/rejecting t
 
 ---
 
+### Chapter 18 — Async / Await
+> `chapter_18_Async.js/`
+
+The cleanest way to work with promises — `async` functions and `await` let asynchronous code read top-to-bottom like synchronous code, paired with `try` / `catch` / `finally` for error handling and `Promise.all` for running work in parallel.
+
+| File | Topic |
+| :--- | :---- |
+| `161_Async.js` | Introduction to `async` / `await` with `try` / `catch` / `finally` — handling a rejected promise |
+| `162_Asunc_p2.js` | `await` unwrapping a resolved promise — the same pattern Playwright uses for `await page.goto()` |
+| `163_PyOfDOM.js` | Rewriting a Promise-chain (Pyramid of Doom) using `async` / `await` instead of `.then()` |
+| `164_Async_Ex.js` | A real Playwright test file — `async ({ page }) =>`, `await page.goto()`, `await expect(page).toHaveTitle()` |
+| `165_AA.js` | Sequential `await` calls — each one waits for the previous to finish (~3 seconds for 3 calls) |
+| `166_AA_PromiseAll.js` | Parallel execution with `await Promise.all([...])` — all calls run together (~1 second total) |
+| `167_IQ.js` | Interview questions — `async` function return values, sequential `await` flow |
+
+---
+
+### Chapter 19 — Playwright Basics
+> `chapter_19_Playwright_Basics/`
+
+The first real Playwright project setup — where all the JavaScript fundamentals from chapters 01–18 (functions, objects, promises, async/await) come together to write and run actual browser automation tests.
+
+| File | Topic |
+| :--- | :---- |
+| `package.json` | Project manifest declaring `playwright` as a dependency and the `test` script |
+| `package-lock.json` | Locked dependency versions for reproducible installs |
+
+> Playwright is installed **locally** in this project (not globally), so its commands must be run with `npx playwright ...` from inside this folder — not the bare `playwright` command.
+
+---
+
 ## Getting Started
 
 ### Prerequisites
@@ -491,11 +535,18 @@ node chapter_01_Basics/01_Basics.js
 node chapter_12_Functions/117_Pure_Functions.js
 node chapter_13_Strings.js/121_Substring.js
 node chapter_17_Promise/158_Call_Py_Problem.js
+node chapter_18_Async.js/165_AA.js
 ```
 
 ### Running Playwright Tests
 
 ```bash
+# from the repo root
+npx playwright test
+
+# from chapter_19_Playwright_Basics specifically (Playwright is a local dependency there)
+cd chapter_19_Playwright_Basics
+npm install
 npx playwright test
 ```
 
@@ -534,6 +585,10 @@ Phase 5 — Objects & 2D Arrays
 Phase 6 — Asynchronous JavaScript
   Chapter 16  →  Callbacks — sync vs async, 3 ways to pass, callback hell, parameters & return values
   Chapter 17  →  Promises — resolve/reject, .then/.catch/.finally, chaining, Promise.all/allSettled
+  Chapter 18  →  Async/Await — async functions, try/catch/finally, sequential vs parallel await
+
+Phase 7 — Real Automation
+  Chapter 19  →  Playwright Basics — project setup, npx playwright test, your first real test
 ```
 
 > Each chapter's `IQ` files simulate real technical interview questions for QA / SDET roles. Review them after completing each chapter.
@@ -558,9 +613,11 @@ Phase 6 — Asynchronous JavaScript
 - The `IQ` files throughout each chapter mirror real interview questions for QA / developer roles.
 - Chapter 13 includes a standalone `javascript_Stringcheatsheet.md` — a complete string methods reference.
 - Chapter 17 (`Promise`) is the direct language foundation for Playwright's `async` / `await` test syntax.
+- Chapter 18 (`Async` / `Await`) is exactly the syntax Playwright test files are written in — `async ({ page }) => { await page.goto(...) }`.
+- Chapter 19 is a real, installable Playwright project — remember to run its commands with `npx`, not a bare `playwright` command, since it's a local (not global) dependency.
 
 ---
 
 <p align="center">
-  <sub>_Last updated: July 2, 2026 — Chapter 17 (Promises) complete_</sub>
+  <sub>_Last updated: July 5, 2026 — Chapter 19 (Playwright Basics) complete_</sub>
 </p>
